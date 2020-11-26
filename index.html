@@ -1,0 +1,350 @@
+---
+layout: default
+---
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<div class="post">
+  <article class="post-content">
+
+    <div style="text-align:center;">
+      <img src="{{ site.baseurl }}/images/about/me.jpg" alt="Jacob Kelly"
+        style="
+          width: 8rem;
+          border-radius: 50%;
+        "/>
+    </div>
+
+    <header class="post-header" style="text-align: center;">
+      <h1 style="font-size: 1.8rem; margin-top: 0; margin-bottom: 0;">
+                  Jacob Kelly</h1>
+    </header>
+
+    <header class="site-header px2 px-responsive">
+      <div class="wrap">
+        <div class="measure">
+          <div class="clearfix"></div>
+          {% if site.show_social_icons %}
+            {% include social_links.html %}
+          {% endif %}
+        </div>
+      </div>
+    </header>
+
+    <p>
+    I'm an undergrad in Computer Science, Math, and Stats at the
+    <a href="https://www.utoronto.ca/" target="_blank">University of Toronto</a>.
+    I'm currently a Machine Learning Research Intern at
+    <a href="https://www.deepgenomics.com/" target="_blank"> Deep Genomics</a>.
+    I'm also very fortunate to work with
+    <a href="https://www.cs.toronto.edu/~duvenaud/" target="_blank">David Duvenaud</a>
+    at the <a href="https://vectorinstitute.ai" target="_blank">Vector Institute</a>.
+    I'm interested in latent variable models, neural ODEs, variational inference, and genomics.
+    My long term research goal is to combine machine learning with novel sources of data to develop new tools for
+    improved diagnosis and treatment of patients.
+
+        <br><br>
+    Previously, I did computational biology research with
+    <a href="https://www.pmgenomics.ca/bhklab/" target="_blank">Benjamin Haibe-Kains</a>
+    at <a href="http://www.uhnresearch.ca/institutes/pm" target="_blank">Princess Margaret Cancer Research</a>.
+
+    Some of my hobbies include running, rock climbing, and <a href="{{ site.url }}/bookshelf">reading</a>.
+    I'm always open to meeting new people, feel free to <a href="mailto: {{ site.email }}" target="_blank">get in touch</a>
+    if you'd like to chat.
+    </p>
+
+  </article>
+</div>
+
+<div id="Publications" class="post">
+    <article class="post-content">
+        <header class="post-header">
+          <h1 style="font-size: 2rem; margin-top: 0; margin-bottom: 0">Publications</h1>
+        </header>
+    </article>
+</div>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+<tr>
+  <td valign="middle" width="25%">
+    <a href="https://arxiv.org/abs/2010.04230">
+      <img src="{{ site.base_url }}/images/papers/no_mcmc_ebm.png">
+    </a>
+  </td>
+  <td valign="top" width="75%">
+
+    <h3>No MCMC for me: Amortized Sampling for Fast and Stable Training of Energy-Based Models.</h3>
+    <p>
+      Energy-Based Models (EBMs) present a flexible and appealing way
+      to represent uncertainty.
+      <!-- Despite recent advances, training EBMs on
+      high-dimensional data remains a challenging problem as the state-of-the-art
+      approaches are costly, unstable, and require considerable tuning
+      and domain expertise to apply successfully. -->
+      In this work, we present
+      a simple method for training EBMs at scale which uses an entropy-regularized
+      generator to amortize the MCMC sampling typically used in EBM training.
+      <!-- We improve upon prior MCMC-based entropy regularization methods with a fast
+      variational approximation. -->
+      <!-- We demonstrate the effectiveness of our approach
+      by using it to train tractable likelihood models. -->
+      We apply our estimator
+      to the recently proposed Joint Energy Model (JEM), where we match the
+      original performance with faster and stable training.
+      This allows us to
+      extend JEM models to semi-supervised classification on tabular data
+      from a variety of continuous domains.
+    </p>
+    <p>
+        <a href="http://www.cs.toronto.edu/~wgrathwohl/">Will Grathowhl</a>*,
+        <strong>Jacob Kelly*</strong>,
+        <a href="https://research.google/people/MiladHashemi/">Milad Hashemi</a>,
+        <a href="https://norouzi.github.io/">Mohammad Norouzi</a>,
+        <a href="http://www.cs.toronto.edu/~kswersky/">Kevin Swersky</a>,
+        <a href="http://www.cs.toronto.edu/~duvenaud/">David Duvenaud</a>
+    </p>
+    <p>
+        Preprint, in submission.
+    </p>
+    <p>
+      <a href="https://arxiv.org/abs/2010.04230">pdf</a> |
+      <a href="https://github.com/wgrathwohl/VERA">code</a> |
+      <a href="{{ site.url }}/papers/no_mcmc_ebm.bib">bibtex</a>
+    </p>
+  </td>
+</tr>
+
+
+<tr>
+  <td valign="middle" width="25%">
+    <a href="https://arxiv.org/abs/2007.04504">
+      <img src="{{ site.base_url }}/images/papers/easynode.jpg">
+    </a>
+  </td>
+  <td valign="top" width="75%">
+
+    <h3>Learning Differential Equations that are Easy to Solve</h3>
+    <p>
+        Neural ODEs become expensive
+        to solve numerically as training progresses. We
+        introduce a differentiable surrogate for the time cost of standard
+        numerical solvers using higher-order derivatives of solution
+        trajectories. These derivatives are efficient to compute with Taylor-mode
+        automatic differentiation. Optimizing this additional objective trades
+        model performance against the time cost of solving the learned dynamics.
+    </p>
+    <p> <strong>Jacob Kelly*</strong>,
+        <a href="http://www.jessebett.com/">Jesse Bettencourt</a>*,
+        <a href="https://people.csail.mit.edu/mattjj/">Matthew James Johnson</a>,
+        <a href="http://www.cs.toronto.edu/~duvenaud/">David Duvenaud</a>
+    </p>
+    <p>
+      <strong>Neural Information Processing Systems (NeurIPS), 2020</strong>
+    </p>
+    <p>
+        <a href="https://arxiv.org/abs/2007.04504">pdf</a> |
+        <a href="https://github.com/jacobjinkelly/easy-neural-ode">code</a> |
+        <a href="{{ site.url }}/papers/easynode.bib">bibtex</a>
+    </p>
+  </td>
+</tr>
+
+</table>
+
+<p>*equal contribution</p>
+
+
+<div id="Teaching" class="post">
+    <article class="post-content">
+        <header class="post-header">
+          <h1 style="font-size: 2rem; margin-top: 0; margin-bottom: 0">Teaching</h1>
+        </header>
+    </article>
+</div>
+
+<p>I have been a Teaching Assistant for the following:</p>
+<ul>
+  <li><a href="https://probmlcourse.github.io/sta414/">STA414/2104: Statistical Methods for Machine Learning II</a> (Winter 2020)</li>
+</ul>
+
+<div id="Projects" class="post">
+    <article class="post-content">
+        <header class="post-header">
+          <h1 style="font-size: 2rem; margin-top: 0; margin-bottom: 0">Projects</h1>
+        </header>
+    </article>
+</div>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+<tr>
+  <td valign="middle" width="25%">
+    <a href="{{ site.baseurl }}/images/projects/bhk_drug_response/poster.pdf">
+      <img src="{{ site.base_url }}/images/projects/bhk_drug_response/elasticnet.jpg">
+    </a>
+  </td>
+  <td valign="top" width="75%">
+
+    <h3>Elastic Net Regression to Predict Drug Response from Gene Expression</h3>
+    <p>
+        We develop drug-specific models to detect biomarkers
+        in gene expression data for predicting the area under the drug-dose
+        response curve (AUC) of cell lines for acute myeloid leukemia (AML). We
+        apply our model to two pharmacogenomic datasets, one consisting of data
+        from immortalized cell lines, the other ex-vivo primary cell lines from
+        patients. We use linear regression with elastic net regularization as
+        our model and compare methods for feature selection.
+    </p>
+    <p> <strong>Jacob Kelly</strong>,
+        Arvind Mer,
+        Sisira Nair,
+        Hassan Mahmoud,
+        Benjamin Haibe-Kains
+    </p>
+    <p>
+        <a href="{{ site.baseurl }}/images/projects/bhk_drug_response/poster.pdf">poster</a>
+    </p>
+  </td>
+</tr>
+
+<tr>
+  <td valign="middle" width="25%">
+    <a href="https://github.com/jacobjinkelly/sequencing">
+      <img src="{{ site.base_url }}/images/projects/sequencing/sequencing.png">
+    </a>
+  </td>
+  <td valign="top" width="75%">
+
+    <h3>Genomic Sequencing</h3>
+    <p>
+        To learn about genomic sequencing, I implemented
+        <a href="https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm">Boyer-Moore</a>
+        for performing exact sequence alignment. I also implemented
+        the <a href="https://web.cs.ucdavis.edu/~gusfield/cs224f09/">Z algorithm</a>
+        to efficiently generate indices of the query string needed for the Boyer-Moore
+        algorithm.
+    </p>
+    <p> <strong>Jacob Kelly</strong>
+    </p>
+    <p>
+        <a href="https://github.com/jacobjinkelly/sequencing">code</a>
+    </p>
+  </td>
+</tr>
+
+<tr>
+  <td valign="middle" width="25%">
+    <a href="https://github.com/UTMIST/ICLR-2019-Challenge">
+      <img src="{{ site.base_url }}/images/projects/iclr2019/iclr2019.jpg">
+    </a>
+  </td>
+  <td valign="top" width="75%">
+
+    <h3>ICLR 2019 Reproducibility Challenge</h3>
+    <p>
+        We implemented the ICLR 2019 submission (later accepted)
+        "<a href="https://openreview.net/forum?id=B1GMDsR5tm">Initialized Equilibrium Propagation for Backprop-Free Training</a>"
+        by O'Connor et al. as part of the
+        <a href="https://reproducibility-challenge.github.io/iclr_2019/">
+        ICLR 2019 Reproducibility Challenge</a>.
+    </p>
+    <p>
+        <sup>†</sup><a href="https://github.com/mchanchee">Matthieu Chan Chee</a>,
+        <a href="https://gitlab.com/tekne">Jad Ghalayini</a>,
+        <strong>Jacob Kelly</strong>,
+        <a href="https://winniexu.ca/">Winnie Xu</a>
+    </p>
+    <p>
+        <a href="https://github.com/UTMIST/ICLR-2019-Challenge">code</a>
+    </p>
+  </td>
+</tr>
+
+<tr>
+  <td valign="middle" width="25%">
+    <a href="https://github.com/jacobjinkelly/deepsort">
+      <img src="{{ site.base_url }}/images/projects/deepsort/deepsort.png">
+    </a>
+  </td>
+  <td valign="top" width="75%">
+
+    <h3>DeepSort</h3>
+    <p>
+        I implemented a sequence to sequence model to learn to sort numbers.
+        I used an encoder-decoder LSTM architecture with a "pointer" attention
+        mechanism developed by Vinyals et al.
+        (<a href="https://arxiv.org/abs/1506.03134">Pointer Networks</a>)
+        to take advantage of the fact that the output of the model is a
+        permutation of its input.
+    </p>
+    <p> <strong>Jacob Kelly</strong>
+    </p>
+    <p>
+        <a href="{{ site.baseurl }}/2018/06/20/sorting-numbers-with-a-neural-network/">blog</a> |
+        <a href="https://github.com/jacobjinkelly/deepsort">code</a>
+    </p>
+  </td>
+</tr>
+
+<tr>
+  <td valign="middle" width="25%">
+    <a href="https://github.com/brunofalmeida/PocketGuide-Android">
+      <img src="{{ site.baseurl }}/images/projects/pocketguide/pocketguide.png">
+    </a>
+  </td>
+  <td valign="top" width="75%">
+
+    <h3>Pocket Guide</h3>
+    <p>
+        We developed an Android app for indoor navigation through
+        <a href="https://www.sickkids.ca/">SickKids</a>
+        hospital using bluetooth signals from
+        <a href="https://estimote.com/">Estimote Beacons</a>. We use
+        <a href="https://en.wikipedia.org/wiki/Shortest_Path_Faster_Algorithm">SPFA</a>
+        on a map of beacon locations to efficiently generate the shortest path
+        from the user's current location to their destination. We estimate
+        the current location using signal strengths from nearby beacons
+        and track over time using an exponentially weighted average.
+        Developed in summer 2016 at <a href="https://www.cossette.com/">Cossette</a>.
+    </p>
+    <p> <sup>†</sup><a href="http://brunoalmeida.ca/">Bruno Almeida</a>,
+        <strong>Jacob Kelly</strong>,
+        <a href="https://github.com/gabrielcyeung">Gabriel Yeung</a>
+    </p>
+    <p>
+        <a href="{{ site.baseurl }}/images/projects/pocketguide/pocketguide_slides.pdf">slides</a> |
+        <a href="https://github.com/brunofalmeida/PocketGuide-Android">code</a>
+    </p>
+  </td>
+</tr>
+
+</table>
+
+<p><sup>†</sup>alphabetical order</p>

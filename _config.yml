@@ -1,10 +1,10 @@
 # Site settings
-title:       Jacob Kelly
-email:       jkelly@cs.toronto.edu
-author:      Jacob Kelly
-description: "Jacob Kelly's Personal Website and Blog"
+title:       Utsav Shinghal
+email:       u.shinghal@mail.utoronto.ca
+author:      Utsav Shinghal
+description: "Utsav Shinghal's Personal Website and Blog"
 baseurl:     ""
-url:         "https://jacobjinkelly.github.io"
+url:         "https://ushinghal19.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
  - bookshelf.md
@@ -53,16 +53,16 @@ facebook_comments_number: 10
 
 # Social icons
 cv: true
-google_scholar: true
-github_username: jacobjinkelly
+google_scholar:
+github_username: ushinghal19
 reddit_username:
 bitbucket_username:
 stackoverflow_id:
-twitter_username: jacobjinkelly
+twitter_username:
 skype_username:
 steam_nickname:
 google_plus_id:
-linkedin_username: jacobjinkelly
+linkedin_username: ushinghal19
 angellist_username:
 medium_id:
 bitcoin_url:

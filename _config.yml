@@ -6,10 +6,10 @@ description: "Utsav Shinghal's Personal Website and Blog"
 baseurl:     ""
 url:         "https://ushinghal19.github.io"
 date_format: "%b %-d, %Y"
-header_pages:
- - bookshelf.md
- - blog/index.html
- - misc.md
+# header_pages:
+# #  - bookshelf.md
+# #  - blog/index.html
+# #  - misc.md
 
 # Google services
 google_verification:

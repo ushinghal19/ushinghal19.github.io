@@ -6,7 +6,7 @@ summary:      Exploring the world hidden under sheets of blue.
 categories:   
 ---
 
-<img src="/images/blog/scuba/scuba1.jpg" alt="scuba1"/>
+<img src="/images/blog/scuba/scuba1.JPG" alt="scuba1"/>
 
 Ever since I was young I wanted to traverse the world inside and out. I have set
 foot tens of thousands of kilometres away from where I am now, as well as thousands
@@ -32,7 +32,7 @@ around you. *Floating*, weightless throughout a vast expanse of hidden tranquili
     
 *The place I first saw turtles <3*
 
-<img src="/images/blog/scuba/turtle.jpg" alt="turtle"/>
+<img src="/images/blog/scuba/turtle.JPG" alt="turtle"/>
 
 
 # Reef Clean-Ups
@@ -52,4 +52,4 @@ the coral surrounding it can grow onto the wires rebuilding the integral structu
 ### Somewhere in Indonesia there is a coral in the shape of my name, 
 where the coral grew on the electric wires that spelt Utsav.
 
-<img src="/images/blog/scuba/cleanup.jpg" alt="cleanup"/>
+<img src="/images/blog/scuba/cleanup.JPG" alt="cleanup"/>

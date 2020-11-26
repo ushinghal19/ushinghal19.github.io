@@ -1,17 +1,15 @@
 ---
 layout:       post
-title:        Learning to Sort with a Neural Network
-date:         2018-06-20
-summary:      Exploring how one might teach a neural net to sort numbers.
+title:        My Life Under the Water
+date:         2020-11-26
+summary:      Exploring the world hidden under sheets of blue.
 categories:   
 ---
 
-I recently came across an interesting challenge: sorting numbers with a neural
-network[^1]. In contrast to other machine learning problems, this one is already
-solved by classical methods (e.g. quicksort). And of course, the data we could
-generate to feed to a machine learning model to learn how to sort is endless, so
-what makes this problem interesting is how *little* data a machine learning
-model would need to learn how to sort.
+Ever since I was young I wanted to traverse the world inside and out. I have set
+foot tens of thousands of kilometres away from where I am now, as well as thousands
+of meters above and various meters below surface level.
+
 
 ## Generalization to Longer Sequences
 One of the most useful properties we could have would be for the model to learn

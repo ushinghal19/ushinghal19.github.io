@@ -66,4 +66,4 @@ A list of the courses I have taken so far at the University of Toronto!
 - **PSY100: Introduction to Psychology**
 (*Ashley Denton*)
     - A brief introductory survey of psychology as both a biological and social science. Topics will include physiological, learning, perceptual, motivational, cognitive, developmental, personality, abnormal, and social psychology.
-
+<br><br>

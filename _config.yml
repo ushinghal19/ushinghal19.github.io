@@ -1,21 +1,21 @@
 # Site settings
-title:       Utsav Shinghal
-email:       u.shinghal@mail.utoronto.ca
-author:      Utsav Shinghal
+title: Utsav Shinghal
+email: u.shinghal@mail.utoronto.ca
+author: Utsav Shinghal
 description: "Utsav Shinghal's Personal Website and Blog"
-baseurl:     ""
-url:         "https://ushinghal19.github.io"
+baseurl: ""
+url: "https://ushinghal19.github.io"
 date_format: "%b %-d, %Y"
-# header_pages:
-# #  - bookshelf.md
-# #  - blog/index.html
-# #  - misc.md
+header_pages:
+#  - bookshelf.md
+#  - blog/index.html
+ - courses.md
 
 # Google services
 google_verification:
 # Use either direct GA implementation or set up GTM account
 # - using both will skew your data (leave blank to not use at all)
-google_analytics: UA-148681655-1
+google_analytics:
 google_tag_manager:
 # Bing services
 bing_verification:

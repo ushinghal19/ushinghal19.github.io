@@ -1,8 +1,8 @@
 ---
-layout: page
-title: Bookshelf
-permalink: /bookshelf/
-tags: bookshelf
+# layout: page
+# title: Bookshelf
+# permalink: /bookshelf/
+# tags: bookshelf
 ---
 
 A list of books I've enjoyed reading over the years, in the order I finished reading them.

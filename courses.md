@@ -49,7 +49,7 @@ A list of the courses I have taken so far at the University of Toronto!
 ([*Asif Zaman*](https://www.math.toronto.edu/zaman/))
     - "A conceptual approach for students with a serious interest in mathematics. Attention is given to computational aspects as well as theoretical foundations and problem solving techniques. Review of Trigonometry. Limits and continuity, mean value theorem, inverse function theorem, differentiation, integration, fundamental theorem of calculus, elementary transcendental functions, Taylor's theorem, sequence and series, power series. Applications."
 - **MAT223: Linear Algebra I**
-([*Jason Siefkin*](http://www.math.toronto.edu/siefkenj/homepage/index.html)
+([*Jason Siefkin*](http://www.math.toronto.edu/siefkenj/homepage/index.html))
     - "Systems of linear equations, matrix algebra, real vector spaces, subspaces, span, linear dependence and independence, bases, rank, inner products, orthogonality, orthogonal complements, Gram-Schmidt, linear transformations, determinants, Cramer's rule, eigenvalues, eigenvectors, eigenspaces, diagonalization."
 - **STA247: Probability with Computer Applications**
 ([*Karen Huynh Wong*](https://www.statistics.utoronto.ca/people/directories/all-faculty/karen-huynh-wong))

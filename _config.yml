@@ -24,13 +24,13 @@ bing_verification:
 animated:             false
 show_related_posts:   false
 show_post_footers:    true
-show_social_icons:    true
+show_social_icons:    trued
 ajaxify_contact_form: false
 enable_mathjax: true
 extended_fonts: false
 enable_anchorjs: false
 # Preview image for social media aka og:image and twitter:image
-post_preview_image: true
+post_preview_image: false
 
 # Facebook Page integration
 # (for instant articles and other stuff)

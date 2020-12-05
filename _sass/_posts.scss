@@ -63,8 +63,11 @@
 }
 
 .youtube {
-  width: 200px;
-  border: black solid 1px;
-  border-radius: 5%;
-  margin-right:  12%;
+  width: 100px;
+  border-radius: 100%;
+  margin: 2% 8%;
+}
+
+.youtube:hover {
+  border: teal solid 5px;
 }

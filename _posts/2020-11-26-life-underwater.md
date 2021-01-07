@@ -2,7 +2,7 @@
 layout:       post
 title:        My Life Under Water
 date:         2020-11-26
-summary:      Exploring the world hidden under sheets of blue.
+summary:      Exploring the world hidden blue.
 categories:   
 ---
 
@@ -30,7 +30,7 @@ around you. *Floating*, weightless throughout a vast expanse of hidden tranquili
 
 - Manado, *Indonesia*  
     
-*The place I first saw turtles <3*
+*The place I first saw turtles*
 
 <img src="/images/blog/scuba/turtle.JPG" alt="turtle"/>
 

@@ -19,9 +19,9 @@ Learning for the sake of learning, not worried about grades :)
 - [The Web Developer's Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/)
     - This course gives a complete rundown of HTML, CSS and JavaScript for any beginner (like me)! I highly recommend it!
 - [The Modern Python 3 Bootcamp](https://www.udemy.com/course/the-modern-python3-bootcamp/)
-    - A wonderful course detailing almost everything there is to the wonderful language of Python!
+    - A solid course detailing almost everything there is to the wonderful language of Python!
 - [Machine Learning by Andrew Ng](https://www.coursera.org/learn/machine-learning) (IPR)
-    - A really fascinating topic, one that I am hoping to dive into as soon as possible :)
+    - A really fascinating topic, one that I am hoping to dive into as soon as possible!
 
 
 ## University Courses

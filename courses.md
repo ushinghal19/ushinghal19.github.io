@@ -14,7 +14,7 @@ tags: courses
 
 ## Online Courses
 
-Learning for the sake of learning, not worried about grades :)
+Learning for the sake of learning.
 
 - [The Web Developer's Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/)
     - This course gives a complete rundown of HTML, CSS and JavaScript for any beginner (like me)! I highly recommend it!
@@ -32,6 +32,15 @@ A list of the courses I have taken so far at the University of Toronto!
 - **MAT237: Multivariable Calculus**
 ([*Asif Zaman*](https://www.math.toronto.edu/zaman/))
     - "Sequences and series. Uniform convergence. Convergence of integrals. Elements of topology in R^2 and R^3. Differential and integral calculus of vector valued functions of a vector variable, with emphasis on vectors in two and three dimensional euclidean space. Extremal problems, Lagrange multipliers, line and surface integrals, vector analysis, Stokes' theorem, Fourier series, calculus of variations."
+- **CSC209: Software Tools and Systems Programing**
+([*Karen Reid*](https://www.cs.toronto.edu/~reid/))
+    - “Software techniques in a Unix-style environment, using scripting languages and a machine-oriented programming language (typically C). What goes on in the operating system when programs are executed. Core topics: creating and using software tools, pipes and filters, file processing, shell programming, processes, system calls, signals, basic network programming.”
+- **CSC263: Data Structures and Analysis**
+([*Michelle Craig*](https://www.provost.utoronto.ca/profile/michelle-craig/))
+    - “Algorithm analysis: worst-case, average-case, and amortized complexity. Expected worst-case complexity, randomized quicksort and selection. Standard abstract data types, such as graphs, dictionaries, priority queues, and disjoint sets. A variety of data structures for implementing these abstract data types, such as balanced search trees, hashing, heaps, and disjoint forests. Design and comparison of data structures. Introduction to lower bounds.”
+- **STA248: Statistics for Computer Scientists**
+([Karen Huynh-Wong](https://www.statistics.utoronto.ca/people/directories/all-faculty/karen-huynh-wong))
+    - “A survey of statistical methodology with emphasis on data analysis and applications. The topics covered include descriptive statistics, data collection and the design of experiments, univariate and multivariate design, tests of significance and confidence intervals, power, multiple regression and the analysis of variance, and count data. Students learn to use a statistical computer package as part of the course”
 - **MAT224: Linear Algebra II**
 ([*Sean Uppal*](https://www.math.toronto.edu/cms/people/faculty/uppal-sean2/))
     - "Fields, complex numbers, vector spaces over a field, linear transformations, matrix of a linear transformation, kernel, range, dimension theorem, isomorphisms, change of basis, eigenvalues, eigenvectors, diagonalizability, real and complex inner products, spectral theorem, adjoint/self-adjoint/normal linear operators, triangular form, nilpotent mappings, Jordan canonical form."
